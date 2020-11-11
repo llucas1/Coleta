@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="./estilo/Main.css">
     <link rel="stylesheet" href="./estilo/home.css"> 
+    <link rel="stylesheet" href="./estilo/modal.css">
+
+
     <link rel="stylesheet" href="./estilo/responsive.css">
   
 </head>
@@ -22,7 +25,7 @@
             <header>
                 <img src="./img/logo.svg" alt="logomarca">
 
-                <a href="#">
+                <a href="create-point.html">
                     <span></span>
                     Cadastre um ponto de coleta </a>
             </header>
@@ -37,6 +40,27 @@
             </main>
         </div>
     </div>
+
+    <!-- inicio dos pontos de coleta pagina que sobre poin quando pesquisar-->
+    <div id="modal" class="hide">
+        <div class="content">
+            <div class="header">
+                <h1>Pontos de Coleta</h1>
+                <a href="#">Fechar</a>
+            </div>
+            <form action="/search-result.html">
+                <label for="search">Cidade</label>
+                <div class="search field">
+                    <input type="text" name="search" placeholder="pesquise por cidade ou estado">
+                    <button>
+                        <img src="./img/search.svg" alt="buscar"> 
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
